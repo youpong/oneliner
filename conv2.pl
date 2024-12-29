@@ -5,8 +5,8 @@
 use v5.36;
 use strict; use warnings;
 
-use open IN => ":encoding(cp932)";
-use open OUT => ":encoding(UTF-8)";
+use open IN => ":encoding(cp932)",
+         OUT => ":encoding(UTF-8)";
 
 open my $in, "<", "text.cp932"
     or die "Can't open file: $!";
