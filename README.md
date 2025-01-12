@@ -18,6 +18,8 @@ $ perl -MEncode -i~ -pe 'Encode::from_to($_, "cp932", "utf-8")' example.cp932
 ```bash
 $ perl -i~ -M'open=IN,:encoding(cp932)' -ne 'binmode STDOUT, ":encoding(UTF-8)"; print;' example.cp932
 ```
+$ perl -i~ -M'open=IN=>":encoding(cp932)",OUT=>":encoding(UTF-8)"' -ne '' example.cp932
+
 
 # Docker
 
